@@ -1,0 +1,17 @@
+.vscode
+.DS_Store
+HELP.md
+
+### JS/TS ###
+node_modules
+htmlcov
+coverage
+build
+.cache
+**/ts/**/.env
+*.tsbuildinfo
+next-env.d.ts
+.next
+npm-debug.log*
+.vercel
+.swc

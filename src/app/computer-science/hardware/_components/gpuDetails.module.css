@@ -1,0 +1,230 @@
+div.template1 p {
+    /* typography */
+    font-weight: bold;
+    line-height: 1;
+    text-decoration-color: oklch(68.5% 0.169 237.323);
+    text-decoration-line: line-through;
+    font-style: italic;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 1;
+    letter-spacing: 0.025em;
+    word-break: keep-all;
+    vertical-align: super;
+    text-transform: lowercase;
+    color: currentColor;
+    white-space: pre;
+}
+
+div.template2 p {
+    /* typography */
+    font-weight: 200;
+    text-align: right;
+    font-size: 14px;
+    line-height: calc(1.25 / 0.875);
+    text-decoration-thickness: 1px;
+    text-decoration-style: solid;
+    vertical-align: bottom;
+    color: inherit;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    word-break: break-all;
+    letter-spacing: 0;
+    text-decoration-color: oklch(65.6% 0.241 354.308);
+    font-family:
+        ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol",
+        "Noto Color Emoji";
+}
+
+div.template3 p {
+    /* typography */
+    line-height: 3;
+    vertical-align: text-bottom;
+    overflow: visible;
+    display: block;
+    -webkit-box-orient: horizontal;
+    -webkit-line-clamp: unset;
+    list-style-type: decimal;
+    font-stretch: condensed;
+    text-transform: capitalize;
+    text-decoration-line: underline;
+    text-underline-offset: 1px;
+    border-color: oklch(0.553 0.013 58.071);
+    background-color: color-mix(in oklab, oklch(37.3% 0.034 259.733) 70%, transparent);
+}
+
+div.template4 p {
+    /* typography */
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 1;
+    background-color: oklch(0.488 0.243 264.376);
+    color: oklch(0.885 0.062 18.334);
+    /* Spacing */
+    padding-inline-start: calc(var(--spacing) * 1);
+    padding-inline-end: calc(var(--spacing) * 3);
+    padding-left: calc(var(--spacing) * 3);
+    padding-top: calc(var(--spacing) * 5);
+    padding-bottom: calc(var(--spacing) * 2);
+    margin-inline-end: 1px;
+    margin-top: calc(var(--spacing) * -1);
+    margin-bottom: calc(var(--spacing) * -2);
+}
+
+div.template5 p {
+    --color-gray-200: oklch(92.8% 0.006 264.531);
+    /* Typography */
+    border-color: color-mix(in oklab, oklch(27.7% 0.046 192.524) 30%, transparent);
+    background-color: color-mix(in oklab, oklch(71.8% 0.202 349.761) 85.2%, transparent);
+    &:first-child {
+        font-weight: 700;
+    }
+    /* Spacing */
+    padding-inline: calc(var(--spacing) * 4);
+    padding-right: calc(var(--spacing) * 1);
+    padding-block: calc(var(--spacing) * 16);
+    margin: calc(var(--spacing) * 2);
+    margin-bottom: auto;
+    &:focus-visible {
+        border-color: var(--color-gray-200);
+    }
+}
+
+div.template6 p {
+    --spacing: 1;
+    --color-gray-100: oklch(96.7% 0.003 264.542);
+    --color-gray-300: oklch(87.2% 0.01 258.338);
+    --color-gray-400: oklch(70.7% 0.022 261.325);
+    --color-blue-200: oklch(88.2% 0.059 254.128);
+    --color-red-500: oklch(63.7% 0.237 25.331);
+    --color-lime-900: oklch(40.5% 0.101 131.063);
+    --tw-space-x-reverse: 0;
+    --tw-space-y-reverse: 0;
+    /* Spacing */
+    & > :not(:last-child) {
+        margin-block-start: calc(-1px * var(--tw-space-y-reverse));
+        margin-block-end: calc(-1px * calc(1 - var(--tw-space-y-reverse)));
+    }
+    & > :not(:last-child) {
+        margin-inline-start: calc(calc(var(--spacing) * -3) * var(--tw-space-x-reverse));
+        margin-inline-end: calc(calc(var(--spacing) * -3) * calc(1 - var(--tw-space-x-reverse)));
+    }
+    /* States */
+    &:nth-child(even) {
+        background-color: var(--color-gray-100);
+    }
+    &:focus-within {
+        border-color: var(--color-blue-200);
+    }
+    &:first-child:hover {
+        font-weight: 700;
+    }
+    &:hover {
+        text-decoration-line: underline;
+    }
+    &:visited {
+        color: var(--color-gray-400);
+    }
+    &::after {
+        color: calc(var(--color-red-500));
+    }
+    &:nth-of-type(3n + 1) {
+        margin: calc(var(--spacing) * 7);
+    }
+    &::selection {
+        color: var(--color-lime-900);
+    }
+    &::first-line {
+        text-transform: uppercase;
+    }
+    &[aria-disabled="true"] {
+        background-color: var(--color-gray-300);
+    }
+    &:nth-last-child(2) {
+        margin-inline: calc(var(--spacing) * 6);
+    }
+}
+
+div.template7 p {
+    --spacing: 1;
+    --color-blue-400: oklch(70.7% 0.165 254.624);
+    --color-lime-500: oklch(76.8% 0.233 130.85);
+    --color-amber-100: oklch(96.2% 0.059 95.617);
+    --color-indigo-700: oklch(45.7% 0.24 277.023);
+    /* States */
+    &:only-child {
+        padding: calc(var(--spacing) * 4);
+    }
+    &::selection:hover {
+        background-color: var(--color-lime-500);
+    }
+    .group:nth-child(odd) & {
+        font-size: var(--text-lg);
+    }
+    :focus & {
+        background-color: var(--color-blue-400);
+    }
+    .peer:hover ~ & {
+        background-color: var(--color-blue-400);
+    }
+    & > * {
+        border-color: var(--color-amber-100);
+    }
+    &:has(:focus) {
+        border-color: var(--color-blue-400);
+    }
+    &:not(:focus) {
+        background-color: var(--color-indigo-700);
+    }
+}
+
+div.template8 {
+    --spacing: 1.5rem;
+    /* Flexbox */
+    display: flex;
+    order: -9999;
+    align-items: center;
+    align-self: center;
+    flex-grow: 1;
+    justify-content: space-evenly;
+    row-gap: calc(var(--spacing) * 6);
+    flex-shrink: 3;
+    place-content: center;
+    flex-basis: min-content;
+    /* Sizing */
+    height: 100%;
+    min-height: min-content;
+    max-height: 85%;
+    width: 25%;
+}
+
+div.template9 {
+    --spacing: 0.25rem;
+    /* Grid */
+    display: grid;
+    justify-self: center;
+    justify-content: space-between;
+    grid-row-end: 2;
+    grid-auto-columns: min-content;
+    grid-auto-flow: row;
+    align-self: stretch;
+    /* Sizing */
+    height: auto;
+    width: calc(var(--spacing) * 1);
+    max-width: min(90vw, 1200px);
+}
+
+div.template10 {
+    --container-4xl: 56rem;
+    /* Grid */
+    display: inline-grid;
+    grid-auto-rows: minmax(0, 1fr);
+    justify-self: end;
+    grid-row: 1 / span 2;
+    /* Sizing */
+    max-width: var(--container-4xl);
+    min-height: max-content;
+}
