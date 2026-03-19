@@ -1,0 +1,45 @@
+name: Build science-ui-on-nextjs
+on:
+  pull_request:
+    types:
+      - opened
+      - reopened
+      - synchronize
+
+env:
+  ACTIONS_STEP_DEBUG: true
+
+jobs:
+  build:
+    runs-on:
+      - ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Install Node.js
+        uses: actions/setup-node@v6
+        with:
+          node-version-file: package.json
+        
+      - name: Install dependencies
+        shell: bash
+        run: npm ci
+
+      - name: Check code formatting
+        shell: bash
+        run: npm run check-format
+
+      - name: Run ESLint
+        shell: bash
+        run: npm run lint
+
+      - name: Run tests
+        shell: bash
+        run: npm run test
+
+      - name: Build
+        shell: bash
+        run: npm run build
