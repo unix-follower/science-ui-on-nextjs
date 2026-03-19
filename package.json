@@ -1,5 +1,5 @@
 {
-  "name": "assistant-on-nextjs",
+  "name": "science-ui-on-nextjs",
   "version": "0.1.0",
   "private": true,
   "engines": {
@@ -60,9 +60,9 @@
     "@types/react-dom": "^19",
     "eslint": "^9",
     "eslint-config-next": "15.5.2",
-    "jest": "^30.0.5",
+    "jest": "^30.3.0",
     "jest-environment-jsdom": "^30.0.5",
-    "prettier": "^3.6.2",
+    "prettier": "^3.8.1",
     "prettier-plugin-tailwindcss": "^0.6.14",
     "tailwindcss": "^4",
     "ts-node": "^10.9.2",
