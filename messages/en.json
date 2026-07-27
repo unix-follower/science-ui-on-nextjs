@@ -55,8 +55,5 @@
     "dieSize": "Die size",
     "modelCodename": "Model (Codename)",
     "modelCodeName": "Model (Code name)"
-  },
-  "mathGeometryCssShapesPage": {
-    "loading": "Loading..."
   }
 }
